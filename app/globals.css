@@ -126,3 +126,104 @@ p.xx-large {
 /* 
  ===== Login Page END =====
 */
+
+
+
+/* 
+ ===== Header START =====
+*/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #D0A650;
+}
+.header-inputs_container {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header-inputs_container-single_input {
+  width: fit-content;
+  height: 32px;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.header-inputs_container-single_input:not(.active) > p {
+  color: white;
+}
+.header-inputs_container-single_input:not(.active):hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.header-inputs_container-single_input.active {
+  background-color: white;
+}
+.header-inputs_container-single_input.active > p {
+  color: #244AA5;
+}
+.header-inputs_container-single_input.active:hover {
+  text-decoration: underline;
+  text-decoration-color: #244AA5;
+}
+.header-inputs_container-kosovo_seal_container {
+  width: fit-content;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2rem;
+}
+.header-inputs_container-kosovo_seal_container > img {
+  height: 50px;
+  width: auto;
+}
+/* 
+ ===== Header END =====
+*/
+
+
+/* 
+ ===== Complaints Container START =====
+*/
+
+.complaints_container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.complaints_container-filters_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid lightgray;
+}
+.complaints_container-complaints_area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: none;
+  overflow-y: scroll;
+}
+
+/* 
+ ===== Complaints Container END
+*/

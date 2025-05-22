@@ -33,7 +33,7 @@ export default function Home() {
         <div className="login-area-horizontal_line"></div>
         <p className="small" style={{
           marginBottom: "1rem"
-        }}>Don't have an account? <Link href="/" style={{
+        }}>Dont have an account? <Link href="/" style={{
           color: "#244AA5"
         }}>Signup</Link></p>
 
