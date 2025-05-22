@@ -36,6 +36,9 @@ p {
 p.white {
   color: white;
 }
+p.gray {
+  color: gray;
+}
 p.small {
   font-size: 12px;
 }
@@ -270,4 +273,86 @@ p.xx-large {
 
 /* 
  ===== Custom Select END =====
+*/
+
+
+/* 
+ ===== Complaints Area Single Complaint START =====
+*/
+
+.complaints_container-complaints_area-single_complaint {
+  width: 80%;
+  height: fit-content;
+  border: 1px solid lightgray;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  border-radius: 1rem;
+}
+.complaints_container-complaints_area-single_complaint-flair_and_timestamp_container {
+  width: calc(100% - 2rem);
+  height: 24px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.complaints_container-complaints_area-single_complaint-flair_and_timestamp_container-flairs_container {
+  width: fit-content;
+  height: 24px;
+  display: flex;
+}
+.complaints_container-complaints_area-single_complaint-flair_and_timestamp_container-flairs_container-single_flair {
+  width: fit-content;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #D0A650;
+  margin-right: 0.5rem;
+}
+.complaints_container-complaints_area-single_complaint-flair_and_timestamp_container-flairs_container-single_flair > p {
+  color: white;
+}
+
+.complaints_container-complaints_area-single_complaint-flair_and_timestamp_container-timestamp_container {
+  width: fit-content;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.complaints_container-complaints_area-single_complaint-vote_button {
+  width: 72px;
+  height: 32px;
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.complaints_container-complaints_area-single_complaint-vote_button.active {
+  background-color: #244AA5;
+}
+.complaints_container-complaints_area-single_complaint-vote_button.active > p {
+  color: white;
+}
+/* 
+ ===== Complaints Area Single Complaint END =====
 */

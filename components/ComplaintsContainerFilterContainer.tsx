@@ -15,7 +15,7 @@ const ComplaintsContainerFilterContainer = () => {
         marginTop: "1rem"
       }}>Category</p>
       <CustomSelect
-        // value={complaintCategory}
+        value={complaintCategory}
         setValue={setComplaintCategory}
         options={[
           { label: "Sherbime Digjitale", value: "sherbimedigjitale" },
@@ -37,7 +37,7 @@ const ComplaintsContainerFilterContainer = () => {
         marginTop: "1rem"
       }}>Status</p>
       <CustomSelect
-        // value={complaintStatus}
+        value={complaintStatus}
         setValue={setComplaintStatus}
         options={[
           { label: "Hapur", value: "hapur" },
