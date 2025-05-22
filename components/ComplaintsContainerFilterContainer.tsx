@@ -49,7 +49,9 @@ const ComplaintsContainerFilterContainer = () => {
         placeholder="Statusi i Ankeses"
       />
 
-
+      <div className="complaints_container-filters_container-search_button">
+        <p className="medium white">Kërko</p>
+      </div>
 
     </div>
   )
