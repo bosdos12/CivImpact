@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className='pageContainer'>
-      <Header />
+      <Header activeButtonList={["active", ""]}/>
 
       <div className="complaints_container">
         <ComplaintsContainerFilterContainer />

@@ -91,6 +91,10 @@ p.xx-large {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
+.login-area_input.complaint_input_form {
+  width: calc(100% - 5rem);
+  margin-left: 2rem;
+}
 .login-area_button-forgot_password-container {
   width: calc(100% - 2rem);
   height: fit-content;
@@ -163,6 +167,7 @@ p.xx-large {
   margin-bottom: auto;
   cursor: pointer;
   margin-right: 1rem;
+  text-decoration: none;
 }
 .header-inputs_container-single_input:not(.active) > p {
   color: white;
@@ -373,4 +378,27 @@ p.xx-large {
 }
 /* 
  ===== Complaints Area Single Complaint END =====
+*/
+
+
+
+
+
+/* 
+ ===== Complaint Input Form Container START =====
+*/
+.complaint_input_form_container {
+  width: 90%;
+  max-width: 360px;
+  height: fit-content;
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+/* 
+ ===== Complaint Input Form Container END =====
 */
