@@ -1,4 +1,5 @@
-import { Header } from '@/components'
+"use"
+import { ComplaintsContainerFilterContainer, Header } from '@/components'
 import React from 'react'
 
 const page = () => {
@@ -7,9 +8,7 @@ const page = () => {
       <Header />
 
       <div className="complaints_container">
-        <div className="complaints_container-filters_container">
-          
-        </div>
+        <ComplaintsContainerFilterContainer />
         <div className="complaints_container-complaints_area">
 
         </div>

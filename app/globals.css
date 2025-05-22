@@ -206,7 +206,7 @@ p.xx-large {
   height: calc(100vh - 60px);
   /* background-color: red; */
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
 }
 .complaints_container-filters_container {
   width: 100%;
@@ -215,6 +215,7 @@ p.xx-large {
   flex-direction: column;
   border-right: 1px solid lightgray;
 }
+
 .complaints_container-complaints_area {
   width: 100%;
   height: 100%;
@@ -226,4 +227,47 @@ p.xx-large {
 
 /* 
  ===== Complaints Container END
+*/
+
+/* 
+ ===== Custom Select START ===== 
+*/
+.custom-select-wrapper {
+  position: relative;
+  width: calc(100% - 4rem); /* Or 100% — up to you */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 40px;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.custom-select-trigger {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.custom-select-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 999;
+}
+
+.custom-select-option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.custom-select-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* 
+ ===== Custom Select END =====
 */
