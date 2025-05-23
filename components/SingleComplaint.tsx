@@ -7,10 +7,11 @@ interface Props {
   creationDate: string;
   description: string;
   votes: string;
+  responses?: Array<Array<string>>;
 }
 
 const SingleComplaint = ({
-  complaintTitle, category, status, creationDate, description, votes
+  complaintTitle, category, status, creationDate, description, votes, responses
 }: Props) => {
   return (
     <div className="complaints_container-complaints_area-single_complaint">
@@ -47,6 +48,17 @@ const SingleComplaint = ({
         }}>
           <i className="fa-regular fa-circle-up"></i> {votes}
         </p>
+      </div>
+
+      <div className="complaints_container-complaints_area-single_complaint-responses_container">
+        {responses?.map(singleResponse => (
+          <div className="complaints_container-complaints_area-single_complaint-responses_container-single_response_container" key={singleResponse[0]}>
+            <p className="medium">{singleResponse[0]}</p>
+            <p className="small">
+              {singleResponse[1]}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   )

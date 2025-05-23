@@ -7,10 +7,11 @@ interface Props {
   creationDate: string;
   description: string;
   votes: string;
+  responses?: Array<Array<string>>;
 }
 
 const AdminPageSingleComplaint = ({
-  complaintTitle, category, status, creationDate, description, votes
+  complaintTitle, category, status, creationDate, description, votes, responses
 }: Props) => {
   return (
     <div className="complaints_container-complaints_area-single_complaint">
@@ -58,21 +59,14 @@ const AdminPageSingleComplaint = ({
       </div>
 
       <div className="complaints_container-complaints_area-single_complaint-responses_container">
-
-        <div className="complaints_container-complaints_area-single_complaint-responses_container-single_response_container">
-          <p className="medium">Response</p>
-          <p className="small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        
-        <div className="complaints_container-complaints_area-single_complaint-responses_container-single_response_container">
-          <p className="medium">Response</p>
-          <p className="small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-
+        {responses?.map(singleResponse => (
+          <div className="complaints_container-complaints_area-single_complaint-responses_container-single_response_container" key={singleResponse[0]}>
+            <p className="medium">{singleResponse[0]}</p>
+            <p className="small">
+              {singleResponse[1]}
+            </p>
+          </div>
+        ))}
       </div>
       
     </div>
