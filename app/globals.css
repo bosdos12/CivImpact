@@ -307,7 +307,7 @@ p.xx-large {
   width: 80%;
   height: fit-content;
   border: 1px solid lightgray;
-  max-width: 480px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -375,6 +375,61 @@ p.xx-large {
 }
 .complaints_container-complaints_area-single_complaint-vote_button.active > p {
   color: white;
+}
+.complaints_container-complaints_area-single_complaint-response_input-container {
+  width: calc(100% - 2rem);
+  height: 32px;
+  /* background-color: rebeccapurple; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.complaints_container-complaints_area-single_complaint-response_input {
+  width: 560px;
+  height: 40px;
+  padding: 0px;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  outline: none;
+  padding-left: 0.5rem;
+  font-size: 16px;
+  font-family: InterRegular;
+}
+.complaints_container-complaints_area-single_complaint-response_input-submit_button {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  background-color: #244AA5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.complaints_container-complaints_area-single_complaint-response_input-submit_button:hover {
+  opacity: 0.7;
+}
+.complaints_container-complaints_area-single_complaint-responses_container {
+  width: calc(100% - 2rem);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.complaints_container-complaints_area-single_complaint-responses_container-single_response_container {
+  border-top: 1px solid lightgray;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 /* 
  ===== Complaints Area Single Complaint END =====

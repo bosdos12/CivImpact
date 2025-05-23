@@ -1,5 +1,5 @@
 "use"
-import { ComplaintsContainerFilterContainer, Header, SingleComplaint } from '@/components'
+import { AdminPageSingleComplaint, ComplaintsContainerFilterContainer, Header } from '@/components'
 import React from 'react'
 
 const page = () => {
@@ -11,7 +11,7 @@ const page = () => {
         <ComplaintsContainerFilterContainer />
         <div className="complaints_container-complaints_area">
           
-          <SingleComplaint
+          <AdminPageSingleComplaint
             complaintTitle='Complaint for abcdefg'
             category='Sherbime Digjitale'
             status='Hapur'

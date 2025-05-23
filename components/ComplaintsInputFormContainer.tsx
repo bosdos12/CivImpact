@@ -5,7 +5,6 @@ import CustomSelect from './CustomSelect';
 const ComplaintsInputFormContainer = () => {
 
   const [complaintCategory, setComplaintCategory] = useState("");
-  const [complaintStatus, setComplaintStatus] = useState("");
 
   return (
     <div className="complaint_input_form_container">
